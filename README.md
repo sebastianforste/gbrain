@@ -1,5 +1,7 @@
 # GBrain
 
+> Fork note: this fork adds a Legal Company Brain layer for General Counsel, product counsel and legal operations use cases in regulated AI and fintech companies. See [`LEGAL_COMPANY_BRAIN.md`](LEGAL_COMPANY_BRAIN.md) and [`legal-company-brain/`](legal-company-brain/).
+
 **Search gives you raw pages. GBrain gives you the answer.** It's the brain layer your AI agent has been missing — the only one that does synthesis, graph traversal, and gap analysis in one box.
 
 I'm Garry Tan, President and CEO of Y Combinator. I built GBrain to run my own AI agents. It's the production brain behind my OpenClaw and Hermes deployments: **146,646 pages, 24,585 people, 5,339 companies**, 66 cron jobs running autonomously. My agent ingests meetings, emails, tweets, voice calls, and original ideas while I sleep. It enriches every person and company it encounters. It fixes its own citations and consolidates memory overnight. I wake up smarter than when I went to bed — and so will you.
@@ -352,7 +354,7 @@ schema migration — `gbrain upgrade` is the whole fix.
 - [`docs/eval/`](docs/eval/) — eval framework, metric glossary, methodology
 - [`docs/ethos/`](docs/ethos/) — philosophy (thin harness, fat skills, markdown as recipes, origin story)
 - [`AGENTS.md`](AGENTS.md) — entry point for non-Claude agents
-- [`CLAUDE.md`](CLAUDE.md) — entry point for Claude Code (deep operating context)
+- [`CLAUDE.md`](CLAUDE.md) — entry point for Claude Code
 - [`CONTRIBUTING.md`](CONTRIBUTING.md) — contributor guide, test discipline, eval-capture mode
 - [`SECURITY.md`](SECURITY.md) — OAuth threat model, hardening defaults
 
