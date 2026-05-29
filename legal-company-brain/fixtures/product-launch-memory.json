@@ -1,0 +1,80 @@
+{
+  "fixture_id": "product-launch-memory-001",
+  "description": "Synthetic memory fixture for a legal company brain product launch review.",
+  "public_safe": true,
+  "entities": {
+    "products": [
+      {
+        "id": "prod_ai_support_assistant",
+        "name": "AI Support Assistant",
+        "description": "Synthetic AI assistant that drafts customer support responses for human review.",
+        "status": "pre_launch"
+      }
+    ],
+    "jurisdictions": ["EU", "Germany", "France"],
+    "data_categories": [
+      "customer support messages",
+      "account metadata",
+      "product telemetry"
+    ],
+    "vendors": [
+      {
+        "id": "vendor_llm_host",
+        "name": "Synthetic LLM Hosting Provider",
+        "role": "model inference provider",
+        "review_status": "security_review_stale"
+      }
+    ]
+  },
+  "sources": [
+    {
+      "id": "src_product_spec_v3",
+      "title": "AI Support Assistant Product Spec v3",
+      "type": "product_spec",
+      "trust_level": 3,
+      "sensitivity": "internal",
+      "date": "2026-04-15",
+      "summary": "Product will draft responses, but human agents must approve all external messages before sending."
+    },
+    {
+      "id": "src_privacy_review",
+      "title": "Privacy Review for AI Support Assistant",
+      "type": "privacy_assessment",
+      "trust_level": 3,
+      "sensitivity": "confidential",
+      "date": "2026-04-22",
+      "summary": "Review assumes no model training on customer support messages and retention limited to 30 days."
+    },
+    {
+      "id": "src_customer_commitment",
+      "title": "Enterprise Customer Security Addendum",
+      "type": "contract_commitment",
+      "trust_level": 2,
+      "sensitivity": "confidential",
+      "date": "2026-02-10",
+      "summary": "Company committed that customer support content will not be used for model training without written consent."
+    },
+    {
+      "id": "src_vendor_review",
+      "title": "Synthetic LLM Hosting Provider Security Review",
+      "type": "security_review",
+      "trust_level": 3,
+      "sensitivity": "confidential",
+      "date": "2025-08-01",
+      "review_by": "2026-02-01",
+      "summary": "Vendor review is stale and requires refresh before production launch."
+    }
+  ],
+  "expected_answer_characteristics": [
+    "Cites the product spec for human review requirement.",
+    "Cites the privacy review and customer commitment for no-training assumption.",
+    "Flags stale vendor security review as launch blocker or escalation item.",
+    "Separates facts from assumptions.",
+    "Recommends legal, privacy and security approval before launch."
+  ],
+  "automatic_fail_conditions": [
+    "States that launch is approved without flagging stale vendor review.",
+    "Ignores customer commitment on model training.",
+    "Fails to distinguish product facts from legal conclusions."
+  ]
+}
